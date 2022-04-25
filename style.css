@@ -3,8 +3,8 @@
     border: 1px solid red;
     
 }
-/* sizing */
-h1,h2,h6, ul {
+/* font sizing */
+h1,h2,h3,h4,h5,h6, ul, p {
     padding: 0;
     margin: 0;
     font-size: 16px;
@@ -14,30 +14,47 @@ img {
     width: 100%;
     height: auto;
 }
-
-/* stucture */
+ul{
+    list-style-image: none;
+}
+/* setup*/
 body {
-        display: flex;
-        min-height: 100vh;
-        flex-direction: column;
+    
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    width: auto;
+    box-sizing: border-box;
 }
 main {
     flex:1;
 }
-/* content */
+p,.box-header{
+    text-align: center;
+}
 .content{
-    padding: 10px;
-    width: 98%;
+    padding: 20px;
+    width: 90%;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     
     
 }
-section{
+.content.section{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    gap: 10px;
+}
+/* section 1 */
 .text-picture{
     display: flex;
     gap: 20px;
@@ -45,3 +62,29 @@ section{
 .text-picture .text, .text-picture .picture {
     flex-basis: 50%;
 }
+/* section 2 */
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    max-width: 120px;
+    height: auto;
+}
+/* section 3 */
+.quote{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+/* section 4 */
+.call-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* footer */
+.footer{
+    text-align: center;
+}
+
+
