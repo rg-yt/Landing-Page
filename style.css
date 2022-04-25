@@ -1,9 +1,9 @@
 /* Visualize */
-* {
+/* * {
     border: 1px solid red;
     
-}
-/* font sizing */
+}  */
+/* font sizing-inital */
 h1,h2,h3,h4,h5,h6, ul, p {
     padding: 0;
     margin: 0;
@@ -15,11 +15,12 @@ img {
     height: auto;
 }
 ul{
-    list-style-image: none;
+    list-style-type: none;
 }
+
 /* setup*/
 body {
-    
+    font-family: 'Roboto', sans-serif;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -31,6 +32,7 @@ main {
 }
 p,.box-header{
     text-align: center;
+    ;
 }
 .content{
     padding: 20px;
@@ -45,10 +47,15 @@ p,.box-header{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 /* header */
+.head{
+    padding-top: 5px;
+}
 .header{
     display: flex;
     justify-content: space-between;
+    
 }
 ul{
     display: flex;
@@ -68,8 +75,12 @@ ul{
     justify-content: space-evenly;
 }
 .card{
-    max-width: 120px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    max-width: 140px;
     height: auto;
+    gap:5px;
 }
 /* section 3 */
 .quote{
@@ -81,10 +92,71 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 /* footer */
 .footer{
     text-align: center;
 }
+/* font styling */
+header,footer, .one{
+    background-color: #1F2937;
+}
+h1 {
+    font-size: 24px;
+    color: #f9faf8;
+}
+.hero{
+    font-size: 48px;
+    color: #f9faf8;
+}
+ul,.text p{
+    font-size: 18px;
+    color: #e5e7eb;
+    text-align: left;
+}
+button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    width: 80px;
+    height: 30px;
+    border-radius: 3px;
+}
+h2{
+    font-size: 36px;
+    color: #1F2937;
+    margin-bottom: 10px;
+}
 
+img{
+    border: 6px solid #3882f6;
+    border-radius: 3px;
+}
+.four{
+    background-color: #e5e7eb;
+}
+.quote-text p {
+    font-size: 36px;
+    text-align: left;
+    
+    
+}
+.quote-speaker h3{
+    text-align: right;
+    padding-right: 10px;
+}
+.call-action{
+    height: 100px;
+    width: auto;
+    background-color: #3882f6;
+    border-radius: 6px;
+    color: #f9faf8;
+}
+.call-action button{
+    border: 1px solid #f9faf8;
+    border-radius: 3px;
+}
+footer{
+    color: #f9faf8;
+}
 
